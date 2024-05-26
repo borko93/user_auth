@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block title%}Регистрација{%endblock%}
+
+{%block content%}
+<h2>Регистрација!</h2>
+<form method="POST">
+    {%csrf_token%}
+    {{form}}
+    <hr>
+    <button type="submit">Региструјте се!</=>
+</form>
+{%endblock%}
